@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --prime-txt-color: ;
+    --prime-bg-color: ;
+}
+body{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container{
+    width: 50%;
+    margin: auto;
+    padding: 20px 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    transition: .2s;
+}
+.info a:hover{
+    color: blue;
+    margin-left: 5px;
+}
+nav, section, footer{
+    width: 100%;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.skills ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.skills ul li{
+    background-color: #d3d3d3;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.socails ion-icon{
+    font-size: 22px;
+}
+.socails ion-icon:hover, .socails i:hover{
+    transform: scale(1.1);
+}
