@@ -51,6 +51,10 @@ nav .container{
     justify-content: space-between;
     align-items: center;
 }
+.name{
+    font-weight: 700; 
+    font-size: 3em;
+}
 .info p{
     font-size: 18px;
     font-weight: 400;
@@ -132,14 +136,15 @@ footer .container{
     .container{
         width: 70%;
     }
+    .name{
+        font-size: 37px;
+        margin-top: 20px;
+    }
 }
 @media (max-width:760px){
     .container{
         width: 100%;
         padding: 0 10px;
-    }
-    .card{
-        width: 100%;
     }
     .about{
         flex-direction: column-reverse;
@@ -147,8 +152,16 @@ footer .container{
     .info{
         align-self: flex-start;
     }
+    .name{
+        font-size: 33px;
+        margin-top: 20px;
+    }
     .contact{
         margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .card, .skills{
+        width: 100%;
         margin-bottom: 30px;
     }
 }
