@@ -203,9 +203,17 @@ nav {
   border-radius: 4px;
   border: 1px solid #e5e5e5;
 }
-.tech-list {
+.tech-list h3 {
+  margin-right: 8px;
+  font-weight: 500;
+}
+.tech-list ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+}
+.tech-list ul li {
+  list-style-type: none;
 }
 .tech-list span {
   margin-bottom: 12px;
@@ -491,6 +499,9 @@ body.dark-theme footer {
 body.dark-theme .theme-toggle {
   background: #171717;
   border-color: #262626;
+}
+body.dark-theme .theme-toggle:hover {
+  border-color: #737373;
 }
 
 body.dark-theme .sun-icon {
