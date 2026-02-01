@@ -32,8 +32,6 @@ nav {
 .avatar {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 .avatar img {
   width: 100%;
@@ -207,11 +205,6 @@ nav {
   margin-right: 8px;
   font-weight: 500;
 }
-.tech-list ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
 .tech-list ul li {
   list-style-type: none;
 }
@@ -223,18 +216,29 @@ nav {
   margin-right: 22px;
 }
 
+.skills-item {
+  padding-bottom: 12px;
+}
+.skills-item p {
+  color: #525252;
+}
+.skills-item h3 {
+  color: #171717;
+}
 .experience-list {
   display: grid;
   gap: 2rem;
 }
 
-.experience-item {
+.experience-item,
+.skills-item {
   border-left: 2px solid #e5e5e5;
   padding-left: 1.5rem;
   position: relative;
 }
 
-.experience-item:before {
+.experience-item:before,
+.skills-item::before {
   content: "";
   position: absolute;
   left: -6px;
@@ -243,6 +247,9 @@ nav {
   height: 10px;
   background: #171717;
   border-radius: 50%;
+}
+.skills-item::before {
+  top: 12px;
 }
 
 .experience-period {
@@ -393,7 +400,7 @@ body.dark-theme .section-title {
 }
 
 body.dark-theme .intro {
-  color: #d4d4d4;
+  color: #a3a3a3;
 }
 
 body.dark-theme .work-state {
@@ -449,11 +456,13 @@ body.dark-theme #github i {
   color: #d4d4d4;
 }
 
-body.dark-theme .experience-item {
+body.dark-theme .experience-item,
+body.dark-theme .skills-item {
   border-left-color: #262626;
 }
 
-body.dark-theme .experience-item:before {
+body.dark-theme .experience-item:before,
+body.dark-theme .skills-item::before {
   background: #f5f5f5;
 }
 
@@ -461,7 +470,8 @@ body.dark-theme .experience-period {
   color: #a3a3a3;
 }
 
-body.dark-theme .experience-title {
+body.dark-theme .experience-title,
+body.dark-theme .skills-title {
   color: #f5f5f5;
 }
 
@@ -469,8 +479,9 @@ body.dark-theme .experience-company {
   color: #d4d4d4;
 }
 
-body.dark-theme .experience-description {
-  color: #d4d4d4;
+body.dark-theme .experience-description,
+body.dark-theme .skills-description {
+  color: #a3a3a3;
 }
 
 body.dark-theme .social-card {
